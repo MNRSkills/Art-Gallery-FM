@@ -1,0 +1,9 @@
+body{
+    --dark-gold: #D5966C;
+    --black: #151515;
+    --gray: #444444;
+    --white: #ffffff;
+
+    --heading-xl: "Big Shoulders Display", sans-serif;
+    --body-p: "Outfit", sans-serif;
+}
