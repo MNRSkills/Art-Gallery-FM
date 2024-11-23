@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 375px;
+  min-width: 375px;
 }
 
 body h1 {
@@ -21,6 +21,7 @@ body p {
   padding-top: 20px;
   font-size: 18px;
   font-family: var(--body-p);
+  font-weight: 200;
   line-height: 28px;
   color: var(--gray);
 }
@@ -51,6 +52,7 @@ button {
   width: 204px;
   height: 72px;
   background-color: var(--black);
+  border: none;
 }
 
 button h2 {
@@ -134,6 +136,7 @@ button h2 {
 .pic-grid-three p {
   max-width: 295px;
   padding: 5px 20px;
+  color: var(--white)
 }
 
 .container {
@@ -168,6 +171,7 @@ footer h2 {
 footer p{
   line-height: 26px;
   font-size: 16px;
+  color: var(--white)
 }
 
 .social-media-icons{
