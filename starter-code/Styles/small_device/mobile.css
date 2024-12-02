@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   padding: 0;
@@ -136,7 +134,7 @@ button h2 {
 .pic-grid-three p {
   max-width: 295px;
   padding: 5px 20px;
-  color: var(--white)
+  color: var(--white);
 }
 
 .container {
@@ -153,7 +151,7 @@ footer {
   text-align: left;
 }
 
-footer .container{
+footer .container {
   padding: 0 32px;
 }
 
@@ -168,13 +166,13 @@ footer h2 {
   padding-top: 40px;
 }
 
-footer p{
+footer p {
   line-height: 26px;
   font-size: 16px;
-  color: var(--white)
+  color: var(--white);
 }
 
-.social-media-icons{
+.social-media-icons {
   height: 20px;
   width: 100px;
   display: flex;
@@ -184,3 +182,181 @@ footer p{
   margin-top: 38px;
   padding-bottom: 48px;
 }
+
+/* Tablet Design --------------- */
+
+@media (min-width: 769px) {
+  body {
+    width: 768px;
+    margin: 0;
+    padding: 0;
+  }
+
+  body h1 {
+    max-width: 339px;
+    max-height: 130px;
+  }
+
+  header .container {
+    position: absolute;
+    right: 40px;
+    top: 145px;
+    left: 389px;
+    padding: 0;
+    max-width: 339px;
+    max-height: 410px;
+  }
+  .hero-pic {
+    background-image: url("../../assets/tablet/image-hero.jpg");
+    background-size: cover;
+    height: 700px;
+    width: 437px;
+  }
+
+  /* MID SECTION ---- START */
+
+  .mid-section {
+    width: 689px;
+  }
+
+  .top-section-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .mid-section-start {
+    width: 398px;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .mid-section-pitch {
+    width: 223px;
+    height: 299px;
+  }
+
+  .mid-section-pitch h1 {
+    margin: 0;
+  }
+  .pic-grid-col {
+    height: 720px;
+
+    grid-template-rows: 313px 396px;
+  }
+
+  .pic-grid-one {
+    background-image: url(../../assets/tablet/image-grid-2.jpg);
+    width: 398px;
+    height: 720px;
+  }
+
+  .pic-grid-two {
+    width: 280px;
+    height: 313px;
+    background-image: url(../../assets/tablet/image-grid-3.jpg);
+  }
+
+  .pic-grid-three {
+    grid-column-start: 2;
+    width: 280px;
+    height: 396px;
+  }
+
+  .third-container {
+    width: 223px;
+    height: 226px;
+    color: var(--white);
+    padding: 0;
+    margin: 85px 29px;
+  }
+
+  .third-container h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .third-container p {
+    margin-top: 24px;
+    padding: 0;
+    color: var(--white);
+  }
+
+  /* FOOTER SECTION - */
+
+  footer {
+    max-width: 768px;
+    max-height: 216px;
+
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 0;
+  }
+
+  footer h2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  footer p {
+    width: 280px;
+    height: 104px;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media-icons {
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media-icons span {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/*  END of Tablet Design */
+
+/*  Desktop Design ---------- */
+
+@media all and (min-width: 1440px) {
+  body {
+    width: 1440px;
+    background-color: lightblue;
+  }
+
+  .block-space {
+    background-color: var(--black);
+    width: 499px;
+    height: 799px;
+  }
+
+  header {
+    width: 1275px;
+    /* height: 800px; */
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  header .container h1 {
+    visibility: hidden;
+  }
+  .hero-pic {
+    background-color: red;
+    background-image: url(../assets/desktop/image-hero.jpg);
+    height: 800px;
+    width: 540px;
+  }
+}
+
+/* END of Tablet Design */
