@@ -203,8 +203,8 @@ footer p {
     top: 145px;
     left: 389px;
     padding: 0;
-    max-width: 339px;
-    max-height: 410px;
+    width: 339px;
+    height: 410px;
   }
   .hero-pic {
     background-image: url("../../assets/tablet/image-hero.jpg");
@@ -339,6 +339,15 @@ footer p {
     background-color: var(--black);
     width: 499px;
     height: 799px;
+    position: relative;
+  }
+
+  .block-space h1 {
+    font-size: var(--XLfont);
+    position: absolute;
+    bottom: 434px;
+    top: 189px;
+    left: 165px;
   }
 
   header {
@@ -346,14 +355,29 @@ footer p {
     /* height: 800px; */
     display: flex;
     flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+  }
+
+  header .container {
+    /* width: 1150px; */
+    height: auto;
+    top: 190px;
+    left: 925px;
   }
 
   header .container h1 {
-    visibility: hidden;
+    visibility: collapse;
+    display: none;
+  }
+
+  header .container p {
+    width: 350px;
+    height: 160px;
   }
   .hero-pic {
-    background-color: red;
-    background-image: url(../assets/desktop/image-hero.jpg);
+    /* background-color: red; */
+    background-image: url(../../assets/desktop/image-hero.jpg);
     height: 800px;
     width: 540px;
   }
