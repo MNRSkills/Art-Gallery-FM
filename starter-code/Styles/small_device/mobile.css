@@ -146,8 +146,8 @@ footer {
   color: var(--white);
   margin-top: 3rem;
 
-  max-width: 375px;
-  max-height: 336px;
+  width: 23.4375rem;
+  height: 21rem;
   text-align: left;
 }
 
@@ -286,8 +286,8 @@ footer p {
   /* FOOTER SECTION - */
 
   footer {
-    max-width: 768px;
-    max-height: 216px;
+    width: 48rem;
+    height: 13.5rem;
 
     padding-top: 56px;
     padding-bottom: 56px;
@@ -350,6 +350,11 @@ footer p {
     left: 165px;
   }
 
+  .block-space h1 span {
+    background-color: linear-gradient(to bottom, black 50%, white 50%);
+    color: transparent;
+  }
+
   header {
     width: 1275px;
     /* height: 800px; */
@@ -376,10 +381,54 @@ footer p {
     height: 160px;
   }
   .hero-pic {
-    /* background-color: red; */
     background-image: url(../../assets/desktop/image-hero.jpg);
     height: 800px;
     width: 540px;
+  }
+
+  .mid-section {
+    width: 69.375rem;
+    height: 71.875rem;
+    flex-shrink: 0;
+    padding: 0 10.3rem;
+  }
+
+  .top-section-wrapper {
+  }
+
+  .mid-section-pitch {
+    width: 21.875rem;
+  }
+
+  .mid-section-start {
+    background-image: url("../../assets/desktop/image-grid-1.jpg");
+    width: 39.8765rem;
+  }
+
+  .pic-grid-col {
+  }
+
+  .pic-grid-one {
+    background-image: url("../../assets/desktop/image-grid-2.jpg");
+    width: 39.6875rem;
+  }
+
+  .pic-grid-two {
+    background-image: url("../../assets/desktop/image-grid-3.jpg");
+    width: 27.8125rem;
+    height: 19.5625rem;
+    flex-shrink: 0;
+  }
+
+  .pic-grid-three {
+    width: 27.8125rem;
+  }
+
+  .pic-grid-three p{
+    width: 21.875rem;
+  }
+  footer {
+    width: 90rem;
   }
 }
 
