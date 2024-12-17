@@ -3,31 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Styles/map.css">
+    <link rel="stylesheet" href="./Styles/map.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/main.css" />
   </head>
   <body>
-
-    <div class="btn-wrapper" id="ourLocation">
-      <button class="btn">
-        <a href="./map.html">
-          <h2>back to home</h2>
-        </a>
-      </button>
-      <div class="right-arrow">
-        <a href="./map.html">
-          <img src="./assets/icon-arrow-left.svg" alt="" />
-        </a>
+    <div class="map-container">
+      <div class="btn-wrapper" id="ourLocation">
+        <button class="btn">
+          <a href="index.html">
+            <h2>back to home</h2>
+          </a>
+        </button>
+        <div class="right-arrow">
+          <a href="./map.html">
+            <img src="./assets/icon-arrow-left.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="map-wrapper">
+        <div id="map"></div>
       </div>
     </div>
+    <section>
+      <div class="address-block">
+        <h1>Our Location</h1>
+        <h2>99 King street</h2>
+        <div class="address-state">
+          Newport <br />
+          RI 02840 <br />
+          United States of America
+        </div>
+        <p class="description">
+          Our newly opened gallery is located near the Edward King House on 99
+          King Street. the Modern Art Gallery is free to all visitors and open
+          seven days a week from 8am to 9pm.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="logo-wrapper">
+          <img src="./assets/logo-dark.svg" alt="" />
+        </div>
+        <p>
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+        <div class="social-media-icons">
+          <span class="facebook">
+            <img src="./assets/icon-facebook.svg" alt="" />
+          </span>
+          <span class="insta">
+            <img src="./assets/icon-instagram.svg" alt="" />
+          </span>
+          <span class="birdX">
+           
+          </span>
+        </div>
+      </div>
+    </footer>
 
-    <div id="map"></div>
-
+    <!-- MY SCRIPTS -->
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="

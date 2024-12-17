@@ -1,6 +1,138 @@
-#map{
-    height: 180px;
+body {
+  max-width: 375px;
+  height: 86.1875rem;
+  padding: 0;
+  margin: 0;
 }
 
+body h1 {
+  max-height: 110px;
+  max-width: 343px;
+  text-align: left;
+  font-family: var(--heading-xl);
+  font-size: 4.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
 
+.map-container {
+  width: 75.45706rem;
+  position: relative;
+}
 
+.btn-wrapper {
+  position: absolute;
+  z-index: 2;
+}
+
+.map-wrapper {
+  height: 35.375rem;
+}
+#map {
+  height: 100%;
+}
+
+.leaflet-control-container {
+  display: none;
+}
+
+/* ADDRESS BLOCK --------- */
+
+.address-block {
+  background-color: var(--black);
+  padding: 3rem 1rem;
+  margin: 0;
+  height: 30.8125rem;
+}
+.address-block h1 {
+  text-align: left;
+  font-family: var(--heading-xl);
+  font-size: 3.125rem;
+  /* font-weight: 900; */
+  text-transform: uppercase;
+  line-height: 2.8125rem;
+  color: var(--white);
+}
+
+.address-block h2 {
+  color: var(--dark-gold);
+  font-family: var(--heading-xl);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2rem;
+}
+
+.address-state {
+  font-family: var(--body-p);
+  font-size: 1.4375rem;
+  color: var(--white);
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem; /* 155.556% */
+}
+
+.address-block p {
+  color: var(--white);
+  font-family: var(--body-p);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem; /* 155.556% */
+}
+
+/* ------------- */
+
+/* FOOTER ------------- */
+
+footer {
+  color: var(--black);
+  background-color: var(--dark-gold);
+  margin: 0;
+}
+
+footer .container {
+  display: flex;
+  width: 19.4375rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.375rem;
+  padding: 3rem 2rem;
+}
+
+footer h2 {
+  font-family: var(--heading-xl);
+  font-weight: 900;
+  font-size: 20px;
+
+  text-transform: uppercase;
+  letter-spacing: 3.64px;
+  max-width: 311px;
+  padding-top: 40px;
+}
+
+footer .container p {
+  
+  font-family: var(--body-p);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+
+.social-media-icons {
+  height: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  margin-top: 38px;
+  padding-bottom: 48px;
+}
+
+.social-media-icons img{
+  color: var(--black);
+}
