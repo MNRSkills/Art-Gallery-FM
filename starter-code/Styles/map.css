@@ -1,5 +1,5 @@
 body {
-  max-width: 375px;
+  width: 375px;
   height: 86.1875rem;
   padding: 0;
   margin: 0;
@@ -23,10 +23,50 @@ body h1 {
 .btn-wrapper {
   position: absolute;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-top: 20px;
+  width: 260px;
+  height: auto;
+}
+
+button {
+  width: 204px;
+  height: 72px;
+  background-color: var(--black);
+  border: none;
+}
+
+button h2 {
+  font-family: var(--heading-xl);
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 3.64px;
+}
+
+button a{
+  text-decoration: none;
+}
+
+
+.left-arrow{
+  background-color: var(--dark-gold);
+  height: 72px;
+  width: 56px;
+}
+
+.left-arrow img{
+  padding: 24px 23px;
 }
 
 .map-wrapper {
   height: 35.375rem;
+  position: relative;
+  z-index: 0;
 }
 #map {
   height: 100%;
@@ -114,7 +154,6 @@ footer h2 {
 }
 
 footer .container p {
-  
   font-family: var(--body-p);
   font-size: 1rem;
   font-style: normal;
@@ -133,6 +172,59 @@ footer .container p {
   padding-bottom: 48px;
 }
 
-.social-media-icons img{
+.social-media-icons img {
   color: var(--black);
+}
+
+/* ----------------------------------- */
+
+/* TABLET MEDIA  Q */
+
+@media screen and (min-width: 769px) {
+  body {
+    width: 48rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .address-block {
+    margin-top: 0;
+    padding: 5.5rem 2.5rem 5rem;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;            
+  }
+
+  .address-sub-block{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .address-block h1 {
+    width: 13.9375rem;
+    margin-top: 0;
+  }
+
+  .address-sub-block h2 {
+    margin-top: 0;
+  }
+
+  .address-state p{
+    width: 24.875rem;
+    /* line-height: 1.74rem; */
+   
+  }
+
+  footer .container{
+    width: 43.0625rem;
+    flex-direction: row;
+  }
+
+  footer p{
+    width: 17.5625rem;
+  }
+
+  footer .social-media-icons{
+    margin-left: 8.31rem;
+  }
 }
