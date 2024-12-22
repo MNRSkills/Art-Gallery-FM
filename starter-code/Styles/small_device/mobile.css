@@ -63,8 +63,12 @@ button h2 {
   letter-spacing: 3.64px;
 }
 
-button a{
+button a {
   text-decoration: none;
+}
+
+button:hover {
+  background-color: var(--dark-gold);
 }
 
 .right-arrow {
@@ -75,6 +79,10 @@ button a{
 
 .right-arrow img {
   padding: 24px 23px;
+}
+
+.right-arrow:hover {
+  background-color: var(--black);
 }
 
 .mid-section {
@@ -160,8 +168,6 @@ footer .container {
   padding: 0 32px;
 }
 
-
-
 footer h2 {
   font-family: var(--heading-xl);
   font-weight: bolder;
@@ -188,6 +194,10 @@ footer p {
   margin-left: 0;
   margin-top: 38px;
   padding-bottom: 48px;
+}
+
+.social-media-icons img:hover{
+  background-color: var(--dark-gold)
 }
 
 /* Tablet Design --------------- */
@@ -350,11 +360,12 @@ footer p {
   }
 
   .block-space h1 {
+    width: 32.124rem;
     font-size: var(--XLfont);
     position: absolute;
     bottom: 434px;
     top: 189px;
-    left: 165px;
+    left: 212px;
   }
 
   .block-space h1 span {
@@ -431,7 +442,7 @@ footer p {
     width: 27.8125rem;
   }
 
-  .pic-grid-three p{
+  .pic-grid-three p {
     width: 21.875rem;
   }
   footer {

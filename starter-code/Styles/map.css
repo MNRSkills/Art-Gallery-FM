@@ -228,3 +228,48 @@ footer .container p {
     margin-left: 8.31rem;
   }
 }
+
+
+
+/* 1440 DESKTOP DESIGN */
+
+
+@media (min-width: 1440px) {
+  body{
+    width: 1440px;
+  }
+
+  .map-container{
+    width: 90rem;
+  }
+
+  .address-block{
+    padding: 6.5rem 10.3rem 8rem;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+
+  .address-sub-block p{
+    width: 33.75rem;
+  }
+
+
+  footer {
+
+  }
+
+  footer .container{
+    width: 69.375rem;
+    padding: 5rem 10.31rem;
+  }
+
+  footer .logo-wrapper {
+    margin-right: 8.78rem;
+  }
+
+  footer p{
+    width: 26.875rem;
+    /* margin-left: 8.76rem; */
+  }
+}

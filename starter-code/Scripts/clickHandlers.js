@@ -12,38 +12,68 @@ function debounce(func, delay) {
 // BLOCK SPACE FUNCTION WILL APPEND THE ELEMENTS TO THE DOM
 function blockSpace() {
   header.appendChild(div);
-  div.classList.add("block-space");
-  const h1 = styleHeading("MODER", "N", "ART", "GAL", "L", "ERY");
+
   if (window.innerWidth >= 1440) {
-    div.appendChild(h1);
+    div.classList.add("block-space");
+
+    let h1 = div.querySelector("h1");
+    if (!h1) {
+      console.log("THIS IS HAS AN H1");
+      h1 = styleHeading("MODER", "N", "ART", "GAL", "LERY");
+      div.appendChild(h1);
+    }
   } else {
     div.classList.remove("block-space");
-    const h1 = styleHeading();
-    div.removeChild(h1);
+    let h1 = div.querySelector("h1");
+    if (h1) {
+      div.removeChild(h1);
+    }
   }
 }
 
 // ------------------------------------------------------------
 
-function styleHeading(moder, n, br, art, gal, l, ery) {
-  //   console.log(moder, n, gal, l, ery);
+function styleHeading(moder, n, art, gal, lery) {
+  console.log(moder, n, gal, lery);
 
+  // Create the h1 element
   const h1 = document.createElement("h1");
-  const whiteText = document.createTextNode(moder);
-  h1.appendChild(whiteText);
+
+  const moderSpan = document.createElement("span");
+  moderSpan.textContent = moder;
+  moderSpan.style.color = "white"; // white text
+  h1.appendChild(moderSpan);
 
   const span1 = document.createElement("span");
-  //   const span2 = document.createElement("span");
-  //   const br = document.createElement("br");
   span1.textContent = n;
-  //   span2.textContent = art;
-  span1.style.color =
-    "linear-gradient(90deg, rgba(14,14,14,1) 43%, rgba(255,255,255,1) 44%)";
-
+  span1.style.color = "white"; // White text
   h1.appendChild(span1);
-  //   h1.appendChild(span2);
+
+  h1.appendChild(document.createTextNode(" "));
+
+  const artSpan = document.createElement("span");
+  artSpan.textContent = art;
+  artSpan.style.color = "white"; // Black text
+  h1.appendChild(artSpan);
+
+  h1.appendChild(document.createTextNode(" "));
+
+  const galSpan = document.createElement("span");
+  galSpan.textContent = gal;
+  galSpan.style.color = "white"; // white text
+  h1.appendChild(galSpan);
+
+  const span2 = document.createElement("span");
+  span2.textContent = lery;
+  span2.style.color = "black"; // black text
+  h1.appendChild(span2);
+
   return h1;
 }
 
-window.addEventListener("resize", debounce(blockSpace, 300));
+window.addEventListener(
+  "resize",
+
+  debounce(blockSpace, 300)
+);
 blockSpace();
