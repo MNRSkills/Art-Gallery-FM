@@ -46,6 +46,7 @@ function styleHeading(moder, n, art, gal, lery) {
 
   const span1 = document.createElement("span");
   span1.textContent = n;
+  span1.classList.add("two-tone");
   span1.style.color = "white"; // White text
   h1.appendChild(span1);
 

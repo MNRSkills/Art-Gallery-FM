@@ -352,6 +352,7 @@ footer p {
     background-color: lightblue;
   }
 
+
   .block-space {
     background-color: var(--black);
     width: 499px;
@@ -360,17 +361,22 @@ footer p {
   }
 
   .block-space h1 {
+    max-width: 28.125rem;
     width: 32.124rem;
     font-size: var(--XLfont);
     position: absolute;
     bottom: 434px;
-    top: 189px;
+    top: 95px;
     left: 212px;
   }
 
-  .block-space h1 span {
-    background-color: linear-gradient(to bottom, black 50%, white 50%);
-    color: transparent;
+  
+
+  .block-space .two-tone{
+    background: linear-gradient(to right, white 67%, black 37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
   }
 
   header {
@@ -385,8 +391,8 @@ footer p {
   header .container {
     /* width: 1150px; */
     height: auto;
-    top: 190px;
-    left: 925px;
+    top: 85px;
+    left: 970px;
   }
 
   header .container h1 {
@@ -395,8 +401,8 @@ footer p {
   }
 
   header .container p {
-    width: 350px;
-    height: 160px;
+    width: 21.875rem;
+    height: 10rem;
   }
   .hero-pic {
     background-image: url(../../assets/desktop/image-hero.jpg);
