@@ -196,8 +196,8 @@ footer p {
   padding-bottom: 48px;
 }
 
-.social-media-icons img:hover{
-  background-color: var(--dark-gold)
+.social-media-icons img:hover {
+  background-color: var(--dark-gold);
 }
 
 /* Tablet Design --------------- */
@@ -349,9 +349,7 @@ footer p {
 @media all and (min-width: 1440px) {
   body {
     width: 1440px;
-    background-color: lightblue;
   }
-
 
   .block-space {
     background-color: var(--black);
@@ -370,13 +368,10 @@ footer p {
     left: 212px;
   }
 
-  
-
-  .block-space .two-tone{
+  .block-space .two-tone {
     background: linear-gradient(to right, white 67%, black 37%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
   }
 
   header {
